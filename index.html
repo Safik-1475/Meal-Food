@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Bazar</title>
+    <!-- Tailwind cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="bg-green-100 py-8 border-y-green-300 border-b-2">
+        <div class=" mx-auto max-w-4xl">
+            <form>
+                <label for="" class="w-4/5">
+                    <input class="w-4/5 py-4 px-2  rounded-lg inline-block  " type="text" name="search-food"
+                        id="search-food" placeholder="What are you looking for eat...">
+                    <input
+                        class="capitalize w-20 py-4 text-white font-bold hover:bg-green-400 bg-green-300 rounded-lg cursor-pointer hover:text-black transition duration-700  "
+                        type="submit" value="search" title="Search here" id="search-btn">
+                </label>
+            </form>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- main area start -->
+    <main class="bg-pink-50">
+        <h1 class="py-3 text-center uppercase text-3xl">delicious menu</h1>
+        <!-- single card section start -->
+        <section class="w-3/5 mx-auto grid grid-cols-1" id="meal-container">
+
+        </section>
+        <!-- single card section end -->
+        <section class="container grid grid-cols-4 p-4 gap-3 mx-w-fit mx-auto">
+
+        </section>
+        <!-- Input validation -->
+        <span id="input-valid" class="text-2xl font-semi-bold text-center block text-red-600"></span>
+    </main>
+    <!-- main area end -->
+
+    <!-- Meals js file  -->
+    <script src="./js/meals.js"></script>
+</body>
+
+</html>
